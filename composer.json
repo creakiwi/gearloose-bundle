@@ -1,0 +1,22 @@
+{
+	"name": "creakiwi/gearloose-bundle",
+	"description": "A reusable Symfony2 bundle to store simple geographical data",
+	"keywords": ["symfony2", "geographical", "data"],
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Alexandre André",
+			"email": "alexandre@creakiwi.com",
+			"homepage": "creakiwi.com"
+		}
+	],
+	"require": {
+		"php": ">=5.3.3",
+		"symfony/framework-bundle": ">=2.1"
+	},
+	"autoload": {
+		"psr-0": { "Creakiwi\\GearlooseBundle": "src/" }
+	},
+	"target-dir": "Creakiwi/GearlooseBundle"
+}
