@@ -18,5 +18,12 @@
 	"autoload": {
 		"psr-0": { "Creakiwi\\GearlooseBundle": "src/" }
 	},
+        "extra": {
+            "branch-alias": {
+                "dev-dev": "0.1.x-dev",
+                "dev-test": "0.1.x-alpha",
+                "dev-master": "0.1.x"
+            }
+        },
 	"target-dir": "Creakiwi/GearlooseBundle"
 }
