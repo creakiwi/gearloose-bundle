@@ -9,7 +9,7 @@
 		{
 			"name": "Alexandre André",
 			"email": "alexandre@creakiwi.com",
-			"homepage": "creakiwi.com"
+			"homepage": "http://creakiwi.com"
 		}
 	],
 	"require": {
@@ -20,9 +20,7 @@
 	},
         "extra": {
             "branch-alias": {
-                "dev-dev": "0.1.x-dev",
-                "dev-test": "0.1.x-alpha",
-                "dev-master": "0.1.x"
+                "dev-master": "0.1.x-dev",
             }
         },
 	"target-dir": "Creakiwi/GearlooseBundle"
