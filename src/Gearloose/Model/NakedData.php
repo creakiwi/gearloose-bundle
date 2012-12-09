@@ -18,7 +18,8 @@ use Doctrine\Common\Collections\ArrayCollection;
  * 
  * @author Alexandre André <alexandre@creakiwi.com>
  */
-class NakedData implements INakedData {
+class NakedData implements INakedData
+{
 	protected $id;
 
 	/**
@@ -36,42 +37,50 @@ class NakedData implements INakedData {
 	 */
 	protected $linkedData;
 
-	public function getId() {
+	public function getId()
+        {
 		return $this->id;
 	}
 
-	public function setName($name) {
+	public function setName($name)
+        {
 		$this->name = $name;
 
 		return $this;
 	}
 
-	public function getName() {
+	public function getName()
+        {
 		return $this->name;
 	}
 
-	public function setNameCanonical($nameCanonical) {
+	public function setNameCanonical($nameCanonical)
+        {
 		$this->nameCanonical = $nameCanonical;
 
 		return $this;
 	}
 
-	public function getNameCanonical() {
+	public function getNameCanonical()
+        {
 		return $this->nameCanonical;
 	}
 
-	public function getLinkedData() {
+	public function getLinkedData()
+        {
 		return $this->linkedData ?: new ArrayCollection();
 	}
 
-	public function addLinkedData(ILinkedData $linkedData) {
+	public function addLinkedData(ILinkedData $linkedData)
+        {
 		if (!$this->getLinkedData()->contains($linkedData))
 			$this->getLinkedData()->add($linkedData);
 
 		return $this;
 	}
 
-	public function removeLinkedData(ILinkedData $linkedData) {
+	public function removeLinkedData(ILinkedData $linkedData)
+        {
 		if ($this->getLinkedData()->contains($linkedData))
 			$this->getLinkedData()->remove($linkedData);
 

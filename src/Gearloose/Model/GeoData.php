@@ -16,7 +16,8 @@ namespace Creakiwi\GearlooseBundle\Model;
  * 
  * @author Alexandre André <alexandre@creakiwi.com>
  */
-abstract class GeoData extends LinkedData implements IGeoData {
+abstract class GeoData extends LinkedData implements IGeoData
+{
 	/**
 	 * @see http://en.wikipedia.org/wiki/Decimal_degrees
 	 * 
@@ -61,83 +62,99 @@ abstract class GeoData extends LinkedData implements IGeoData {
 	 */
 	protected $country;
 
-	public function setLatitude($latitude) {
+	public function setLatitude($latitude)
+        {
 		$this->latitude = $latitude;
 
 		return $this;
 	}
 
-	public function getLatitude() {
+	public function getLatitude()
+        {
 		return $this->latitude;
 	}
 
-	public function setLongitude($longitude) {
+	public function setLongitude($longitude)
+        {
 		$this->longitude = $longitude;
 
 		return $this;
 	}
 
-	public function getLongitude() {
+	public function getLongitude()
+        {
 		return $this->longitude;
 	}
 
-	public function setAddress1($address1) {
+	public function setAddress1($address1)
+        {
 		$this->address1 = $address1;
 
 		return $this;
 	}
 
-	public function getAddress1() {
+	public function getAddress1()
+        {
 		return $this->address1;
 	}
 
-	public function setAddress2($address2) {
+	public function setAddress2($address2)
+        {
 		$this->address2 = $address2;
 
 		return $this;
 	}
 
-	public function getAddress2() {
+	public function getAddress2()
+        {
 		return $this->address2;
 	}
 
-	public function setAddress3($address3) {
+	public function setAddress3($address3)
+        {
 		$this->address3 = $address3;
 
 		return $this;
 	}
 
-	public function getAddress3() {
+	public function getAddress3()
+        {
 		return $this->address3;
 	}
 
-	public function setZipCode($zipCode) {
+	public function setZipCode($zipCode)
+        {
 		$this->zipCode = $zipCode;
 
 		return $this;
 	}
 
-	public function getZipCode() {
+	public function getZipCode()
+        {
 		return $this->zipCode;
 	}
 
-	public function setCity($city) {
+	public function setCity($city)
+        {
 		$this->city = $city;
 
 		return $this;
 	}
 
-	public function getCity() {
+	public function getCity()
+        {
 		return $this->city;
 	}
 
-	public function setCountry($country) {
+	public function setCountry($country)
+        {
 		$this->country = $country;
 
 		return $this;
 	}
 
-	public function getCountry() {
+	public function getCountry()
+        {
 		return $this->country;
 	}
 }

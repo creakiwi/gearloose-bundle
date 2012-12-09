@@ -14,7 +14,8 @@ namespace Creakiwi\GearlooseBundle\Model;
 /**
  * @author Alexandre André <alexandre@creakiwi.com>
  */
-interface IGeoData {
+interface IGeoData
+{
 	/**
 	 * Sets the latitude.
 	 * 

@@ -14,7 +14,8 @@ namespace Creakiwi\GearlooseBundle\Model;
 /**
  * @author Alexandre André <alexandre@creakiwi.com>
  */
-interface INakedData {
+interface INakedData
+{
 	/**
 	 * Gets the id.
 	 * 

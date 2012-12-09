@@ -16,7 +16,8 @@ namespace Creakiwi\GearlooseBundle\Model;
  * 
  * @author Alexandre André <alexandre@creakiwi.com>
  */
-abstract class LinkedData implements ILinkedData {
+abstract class LinkedData implements ILinkedData
+{
 	protected $id;
 
 	/**
@@ -26,11 +27,13 @@ abstract class LinkedData implements ILinkedData {
 	 */
 	protected $nakedData;
 
-	public function getId() {
+	public function getId()
+        {
 		return $this->id;
 	}
 
-	public function setNakedData(INakedData $nakedData) {
+	public function setNakedData(INakedData $nakedData)
+        {
 		if ($this->nakedData !== null)
 			$this->nakedData->removeLinkedData($this);
 
@@ -40,7 +43,8 @@ abstract class LinkedData implements ILinkedData {
 		return $this;
 	}
 
-	public function getNakedData() {
+	public function getNakedData()
+        {
 		return $this->nakedData;
 	}
 }

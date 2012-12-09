@@ -16,7 +16,8 @@ namespace Creakiwi\GearlooseBundle\Model;
  * 
  * @author Alexandre André <alexandre@creakiwi.com>
  */
-abstract class TimeData extends LinkedData implements ITimeData {
+abstract class TimeData extends LinkedData implements ITimeData
+{
 /*	protected $mondayStart;
 	protected $mondayEnd;
 
