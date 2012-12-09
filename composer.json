@@ -4,6 +4,7 @@
 	"keywords": ["symfony2", "geographical", "data"],
 	"type": "library",
 	"license": "MIT",
+        "version": "0.1.0",
 	"authors": [
 		{
 			"name": "Alexandre André",
@@ -12,8 +13,7 @@
 		}
 	],
 	"require": {
-		"php": ">=5.3.3",
-		"symfony/framework-bundle": ">=2.1"
+		"php": ">=5.3.3"
 	},
 	"autoload": {
 		"psr-0": { "Creakiwi\\GearlooseBundle": "src/" }
