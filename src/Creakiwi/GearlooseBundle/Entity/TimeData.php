@@ -11,11 +11,30 @@
 
 namespace Creakiwi\GearlooseBundle\Entity;
 
-use Creakiwi\GearlooseBundle\Model\TimeData as AbstractTimeData;
-
 /**
  * @author Alexandre André <alexandre@creakiwi.com>
+ * 
+ * @MappedSuperclass
  */
-abstract class TimeData extends AbstractTimeData
+abstract class TimeData
 {
+/*	protected $mondayStart;
+	protected $mondayEnd;
+
+	protected $tuesdayStart;
+	protected $tuesdayEnd;
+
+	protected $wednesdayStart;
+	protected $wednesdayEnd;
+
+	protected $thursdayStart;
+	protected $thursdayEnd;
+
+	protected $fridayStart;
+	protected $fridayEnd;
+
+	protected $staturdayStart;
+	protected $staturdayEnd;//*/
+	
+	//BRAINSTORMING IN PROGRESS
 }
