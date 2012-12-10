@@ -11,20 +11,26 @@
 
 namespace Creakiwi\GearlooseBundle\Entity;
 
+use Doctrine\ORM\Mapping as ORM;
+
 /**
  * @author Alexandre André <alexandre@creakiwi.com>
  * 
- * @MappedSuperclass
+ * @ORM\MappedSuperclass
  */
 abstract class NakedData
 {
 	/**
-	 * @var string
+	 * @var string $name
+         * 
+         * @ORM\Column(name="name", type="string", length=255)
 	 */
 	protected $name;
 
 	/**
 	 * @var string
+         * 
+         * @ORM\Column(name="name_canonical", type="string", length=255, unique=true)
 	 */
 	protected $nameCanonical;
 }

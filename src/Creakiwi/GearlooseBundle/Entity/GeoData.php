@@ -11,12 +11,14 @@
 
 namespace Creakiwi\GearlooseBundle\Entity;
 
+use Doctrine\ORM\Mapping as ORM;
+
 /**
  * Description of GeoData
  *
  * @author Alexandre André <alexandre@creakiwi.com>
  * 
- * @MappedSuperclass
+ * @ORM\MappedSuperclass
  */
 abstract class GeoData
 {
