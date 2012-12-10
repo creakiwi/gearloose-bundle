@@ -20,8 +20,6 @@ use Doctrine\Common\Collections\ArrayCollection;
  */
 class NakedData implements INakedData
 {
-	protected $id;
-
 	/**
 	 * @var string
 	 */
@@ -37,10 +35,6 @@ class NakedData implements INakedData
 	 */
 	protected $linkedData;
 
-	public function getId()
-        {
-		return $this->id;
-	}
 
 	public function setName($name)
         {

@@ -17,13 +17,6 @@ namespace Creakiwi\GearlooseBundle\Model;
 interface INakedData
 {
 	/**
-	 * Gets the id.
-	 * 
-	 * @return integer
-	 */
-	 public function getId();
-
-	/**
 	 * Sets the name.
 	 * 
 	 * @param string $name
