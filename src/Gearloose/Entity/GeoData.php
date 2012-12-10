@@ -18,6 +18,6 @@ use Creakiwi\GearlooseBundle\Model\GeoData as AbstractGeoData;
  *
  * @author Alexandre André <alexandre@creakiwi.com>
  */
-class GeoData extends AbstractGeoData
+abstract class GeoData extends AbstractGeoData
 {
 }

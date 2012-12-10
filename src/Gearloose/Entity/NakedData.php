@@ -15,6 +15,10 @@ use Creakiwi\GearlooseBundle\Model\NakedData as AbstractNakedData;
 /**
  * @author Alexandre André <alexandre@creakiwi.com>
  */
-class NakedData extends AbstractNakedData
+
+/**
+ * @MappedSuperclass
+ */
+abstract class NakedData extends AbstractNakedData
 {
 }

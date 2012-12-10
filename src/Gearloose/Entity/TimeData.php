@@ -16,6 +16,6 @@ use Creakiwi\GearlooseBundle\Model\TimeData as AbstractTimeData;
 /**
  * @author Alexandre André <alexandre@creakiwi.com>
  */
-class TimeData extends AbstractTimeData
+abstract class TimeData extends AbstractTimeData
 {
 }
