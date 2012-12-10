@@ -18,19 +18,12 @@ namespace Creakiwi\GearlooseBundle\Model;
  */
 abstract class LinkedData implements ILinkedData
 {
-	protected $id;
-
 	/**
 	 * A naked data associating the linked data
 	 * 
 	 * @var integer
 	 */
 	protected $nakedData;
-
-	public function getId()
-        {
-		return $this->id;
-	}
 
 	public function setNakedData(INakedData $nakedData)
         {
