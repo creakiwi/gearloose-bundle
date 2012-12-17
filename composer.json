@@ -13,7 +13,9 @@
         }
     ],
     "require": {
-            "php": ">=5.3.3"
+            "php": ">=5.3.3",
+            "symfony/validator": "dev-master",
+            "doctrine/orm": "dev-master"
     },
     "autoload": {
             "psr-0": { "": "src/" }
