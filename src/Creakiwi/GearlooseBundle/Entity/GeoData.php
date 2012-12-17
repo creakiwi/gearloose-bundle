@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the gearloose-bundle package.
+ * This file is part of the GearlooseBundle package.
  *
  * (c) Alexandre André <alexandre@creakiwi.com>
  *
@@ -12,10 +12,10 @@
 namespace Creakiwi\GearlooseBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+use Creakiwi\GearlooseBundle\Validator\Constraints as GearlooseAssert;
 
 /**
- * Description of GeoData
- *
  * @author Alexandre André <alexandre@creakiwi.com>
  * 
  * @ORM\MappedSuperclass
@@ -27,6 +27,7 @@ abstract class GeoData
 	 * @var decimal degree
          * 
          * @ORM\Column(name="latitude", type="decimal", precision=8, scale=6)
+         * @GearlooseAssert\Latitude
 	 */
 	protected $latitude;
 
@@ -35,6 +36,7 @@ abstract class GeoData
 	 * @var decimal degree
          * 
          * @ORM\Column(name="longitude", type="decimal", precision=9, scale=6)
+         * @GearlooseAssert\Longitude
 	 */
 	protected $longitude;
 
@@ -42,6 +44,8 @@ abstract class GeoData
 	 * @var string
          * 
          * @ORM\Column(name="address1", type="string")
+         * @Assert\NotBlank
+         * @Assert\Length(min=3, max=255)
 	 */
 	protected $address1;
 
@@ -49,6 +53,7 @@ abstract class GeoData
 	 * @var string
          * 
          * @ORM\Column(name="address2", type="string")
+         * @Assert\Length(min=3, max=255)
 	 */
 	protected $address2;
 
@@ -56,6 +61,7 @@ abstract class GeoData
 	 * @var string
          * 
          * @ORM\Column(name="address3", type="string")
+         * @Assert\Length(min=3, max=255)
  	 */
 	protected $address3;
 
@@ -63,6 +69,8 @@ abstract class GeoData
 	 * @var string
          * 
          * @ORM\Column(name="zip_code", type="string", length=16)
+         * @Assert\NotBlank
+         * @Assert\Length(min=3, max=16)
 	 */
 	protected $zipCode;
 
@@ -70,6 +78,8 @@ abstract class GeoData
 	 * @var string
          * 
          * @ORM\Column(name="city", type="string", length=64)
+         * @Assert\NotBlank
+         * @Assert\Length(min=3, max=64)
 	 */
 	protected $city;
 
@@ -77,6 +87,9 @@ abstract class GeoData
 	 * @var string
          * 
          * @ORM\Column(name="country", type="string", length=2)
+         * @Assert\NotBlank
+         * @Assert\Length(min=2, max=2)
+         * @Assert\Country
 	 */
 	protected $country;
 }
