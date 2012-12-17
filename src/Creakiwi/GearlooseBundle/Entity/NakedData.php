@@ -33,4 +33,10 @@ abstract class NakedData
          * @ORM\Column(name="name_canonical", type="string", length=255, unique=true)
 	 */
 	protected $nameCanonical;
+
+        /**
+         * @ORM\OneToOne(targetEntity="GeoData")
+         * @ORM\JoinColumn(name="geo_data_id", referencedColumnName="id")
+         */
+        protected $geoData;
 }
