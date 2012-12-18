@@ -17,6 +17,7 @@
             "symfony/validator": "dev-master",
             "doctrine/orm": "dev-master"
     },
+    "minimum-stability": "dev",
     "autoload": {
             "psr-0": { "": "src/" }
     },
