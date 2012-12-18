@@ -15,7 +15,8 @@
     "require": {
             "php": ">=5.3.3",
             "symfony/validator": "2.1.*",
-            "doctrine/orm": ">=2.2.3,<2.4-dev"
+            "doctrine/orm": ">=2.2.3,<2.4-dev",
+            "berbelei/DoctrineExtensions": "dev-master"
     },
     "minimum-stability": "dev",
     "autoload": {
