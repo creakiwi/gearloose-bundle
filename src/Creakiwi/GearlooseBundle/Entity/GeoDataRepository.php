@@ -44,12 +44,12 @@ class GeoDataRepository extends EntityRepository
                 ->createQuery('
                     SELECT (
                         (
-                            ACOS( SIN(:latitude                   * PI() / 180)
-                                * SIN(g.latitude                  * PI() / 180)
-                                + COS(:latitude                   * PI() / 180)
-                                * COS(g.latitude                  * PI() / 180)
-                                * COS((:longitude - g.latitude)   * PI() / 180)
-                            ) * 180 / PI()
+                            ACOS( SIN(:latitude                   * :pi / 180)
+                                * SIN(g.latitude                  * :pi / 180)
+                                + COS(:latitude                   * :pi / 180)
+                                * COS(g.latitude                  * :pi / 180)
+                                * COS((:longitude - g.latitude)   * :pi / 180)
+                            ) * 180 / :pi
                         ) * 60 * 1.1515 * :mi2km
                     ) AS distance
                     FROM GearlooseBundle:GeoData
@@ -61,6 +61,7 @@ class GeoDataRepository extends EntityRepository
                     'longitude' => $longitude,
                     'distance'  => $distance,
                     'mi2km'     => static::MI2KM,
+                    'pi'        => static::PI,
                 ))
         ;
     }
